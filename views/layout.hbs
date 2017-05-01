@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scheduler</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper blue-grey darken-2">
+            <a href="/" class="brand-logo">Absences</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="/absences">Absences</a></li>
+              <li><a href="/">Tests</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="/absences">Absences</a></li>
+              <li><a href="/">Tests</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+      <div class="footer-copyright">
+        © 2017 jufab. <a class="blue-grey-text text-darken-2 right" href="https://github.com/jufab/schedulerjs/blob/master/LICENSE">MIT License</a>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".button-collapse").sideNav();
+        });
+    </script>
+  </body>
+</html>
